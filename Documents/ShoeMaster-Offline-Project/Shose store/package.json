@@ -1,9 +1,8 @@
-
 {
-  "name": "shoe store",
+  "name": "dude-shop",
   "version": "1.0.0",
-  "description": "ShoeMaster Offline Shoe Store POS and ERP Desktop Application",
-  "author": "ShoeMaster",
+  "description": "Dude Shop POS and ERP Desktop Application",
+  "author": "Dude Shop",
   "private": true,
   "type": "module",
   "main": "electron/main.cjs",
@@ -30,11 +29,11 @@
     "electron": "33.4.11",
     "electron-builder": "^25.1.8",
     "vite": "^6.0.7",
-    "wait-on": "^8.0.1"
+    "wait-on": "^8.1.0"
   },
   "build": {
-    "appId": "com.shoemaster.pos",
-    "productName": "Shose Store",
+    "appId": "com.dudeshop.pos",
+    "productName": "Dude Shop",
     "asar": true,
     "directories": {
       "output": "release"
@@ -53,17 +52,17 @@
         "nsis",
         "portable"
       ],
-      "icon": "build/icon.jpg"
+      "icon": "build/icon.ico"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Shoestore"
+      "shortcutName": "Dude Shop"
     },
     "portable": {
-      "artifactName": "ShoeMaster-Portable-${version}.${ext}"
+      "artifactName": "Dude-Shop-Portable-${version}.${ext}"
     }
   }
 }
